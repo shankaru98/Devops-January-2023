@@ -1,7 +1,7 @@
 Kubernetes - k8s  
 
-1.Kubernetes, often abbreviated as K8s (since there are 8 letters between 'K' and 's')
-2.K8S is an open-source container orchestration platform. Google initially developed it and is now maintained by the Cloud Native Computing Foundation (CNCF). 
+1.K8S is an open-source container orchestration platform.
+2.Google initially developed it and is now maintained by the Cloud Native Computing Foundation (CNCF). 
 3.Kubernetes is designed to automate containerised applications' deployment, scaling, and management.
 4.In our company, we are using Kubernetes to handle Docker.
 
