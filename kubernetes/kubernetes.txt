@@ -1,19 +1,45 @@
-Kubernetes - k8s 
-The architecture of k8s differs from master and worker node 
+Kubernetes - k8s  
+
+1.Kubernetes, often abbreviated as K8s (since there are 8 letters between 'K' and 's')
+2.K8S is an open-source container orchestration platform. Google initially developed it and is now maintained by the Cloud Native Computing Foundation (CNCF). 
+3.Kubernetes is designed to automate containerised applications' deployment, scaling, and management.
+4.In our company, we are using Kubernetes to handle Docker.
+
+Key features of Kubernetes include: Ccontainer Orchestration, Scalability, High Availability, Self-Kubernetes 
+
+Kubernetes, often abbreviated as K8s (since there are 8 letters between 'K' and 's')
+K8S is an open-source container orchestration platform. It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation (CNCF). 
+Kubernetes is designed to automate the deployment, scaling, and management of containerized applications.
+In our company, we are using Kubernetes to handle Docker.
+Key features of Kubernetes include:
+
+Container Orchestration
+Scalability
+High Availability
+Self-Healing
+Service Discovery and Load Balancing
+Automated Rollouts and Rollbacks
+Secrets and Configuration Management
+
+Service Discovery and Load Balancing
+Automated Rollouts and Rollbacks
+Secrets and Configuration Management
+
+The architecture of k8s differs from the master and worker node 
 
 	Master node components 
 		1. Api Server / kube-api-server
-			- It is the main management point of the cluster and also called 
-			  as brain of the cluster.
-			- All the components are directly connected to API serve, they 
-			  communicate through API server only and no other component will 
+			- It is the main management point of the cluster and is also called 
+			  as the brain of the cluster.
+			- All the components are directly connected to the API server, they 
+			  communicate through the API server only and no other component will 
 			  communicate directly with each other.
 			- This is the only component which connects and got access to etcd.
-			- All the cluster requests are authenticated and authorised by API server.
-			- API server has a watch mechanism for watching the changes in cluster.
+			- All the cluster requests are authenticated and authorised by the API server.
+			- The API server has a watch mechanism for watching the changes in the cluster.
 			
 		2. etcd 
-			- ectd is a distributed , consistent key value store used for 
+			- ectd is a distributed, consistent key-value store used for 
 			  storing the complete cluster information/data.
 			- ectd contains data such as configuration management of cluster,
               distributed work and basically complete cluster information.			
